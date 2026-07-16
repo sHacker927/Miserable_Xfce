@@ -51,7 +51,7 @@ detect_os() {
         OS="debian"
         PKG_MANAGER="apt"
         INSTALL_CMD="sudo apt install -y"
-        UPDATE_CMD="sudo apt update && sudo apt upgrade"
+        UPDATE_CMD=""
         SYNC_CMD="sudo apt update"
     elif command -v dnf &> /dev/null; then
         OS="fedora"
@@ -157,8 +157,8 @@ main() {
     
     # Update system
     echo -e "${BLUE}Updating system...${NC}"
-    sudo apt update
-    sudo apt upgrade
+    apt update
+    apt upgrade
     echo -e"${BLUE}System updated!"
      
     
