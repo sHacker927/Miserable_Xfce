@@ -38,6 +38,7 @@ REPO_DIR="Miserable_Xfce"
 
 # Clone and run installer
 cd /tmp
+rm -rf "$REPO_DIR"
 git clone "$REPO_URL"
 cd "$REPO_DIR"
 chmod +x scripts/installer.sh
