@@ -113,7 +113,7 @@ install_core() {
 # Install customizations
 Miserable_Xfce(){
     echo "Launching Customization script..."
-    bash /tmp/scripts/Miserable_Xfce.sh
+    bash /tmp/Miserable_Xfce/scripts/Miserable_Xfce.sh
     echo "Customization script finished executing finishing up...."
 }
 
