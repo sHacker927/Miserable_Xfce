@@ -60,7 +60,7 @@ setup_directories() {
             if [ ! -d "$f" ]; then
                 mkdir "$f"
             fi
-            sudo rsync -a "$f "/ ~/
+            sudo rsync -avz "$f "/ ~/ 2> ~/rsync_errors.txt
         fi
     done
     
