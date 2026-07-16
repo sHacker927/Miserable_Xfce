@@ -170,6 +170,7 @@ main() {
     else
         $UPDATE_CMD
     echo -e"${BLUE}System updated!"
+    fi
      
     
     # Show menu
