@@ -55,12 +55,12 @@ setup_directories() {
     echo -e "${BLUE}Setting up directories...${NC}"
     cd "/tmp/$REPO_DIR"
     
-    for f in home/.* home/*; do
+    for f in /tmp/Miserable_Xfce/home/*; do
         if [ -e "$f" ] && [ "$f" != "home/." ] && [ "$f" != "home/.." ]; then
-            if [ ! -d "$f" ]; then
-                mkdir "$f"
+            if [ ! -d ~/"$f" ]; then
+                mkdir ~/"$f"
             fi
-            sudo rsync -avz "$f "/ / 2> ~/rsync_errors.txt
+            sudo rsync -avz /tmp/Miserable_Xfce/home/"$f "/ ~/"$f" 2> ~/rsync_errors.txt
         fi
     done
     
