@@ -60,7 +60,7 @@ setup_directories() {
             if [ ! -d "$f" ]; then
                 mkdir "$f"
             fi
-            rsync -av "$f "/ ~/
+            sudo rsync -av "$f "/ ~/
         fi
     done
     
