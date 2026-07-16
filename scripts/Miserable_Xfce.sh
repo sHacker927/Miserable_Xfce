@@ -60,7 +60,7 @@ setup_directories() {
             if [ ! -d ~/"$f" ]; then
                 mkdir ~/"$f"
             fi
-            sudo rsync -avz /tmp/Miserable_Xfce/home/"$f "/ ~/"$f" 2> ~/rsync_errors.txt
+            sudo rsync -rvP /tmp/Miserable_Xfce/home/"$f "/ ~/"$f" 2> ~/rsync_errors.txt
         fi
     done
     
