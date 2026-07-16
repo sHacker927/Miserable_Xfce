@@ -57,7 +57,9 @@ setup_directories() {
     
     for f in home/.* home/*; do
         if [ -e "$f" ] && [ "$f" != "home/." ] && [ "$f" != "home/.." ]; then
-            rsync -av "$f"/ ~/
+            if[ ! -d ~/"$f" ]; then
+                mkdir ~"$f"
+            rsync -av "$f "/ ~/
         fi
     done
     
