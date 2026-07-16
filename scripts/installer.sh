@@ -84,7 +84,7 @@ install_core() {
         sudo systemctl enable sddm
         ;;
     debian)
-        $INSTALL_CMD xfce4 xfce4-goodies lightdm lightdm-gtk-greeter fonts-noto thunar xfce4-panel bat neofetch rofi onboard libxext-dev libxcb1-dev libxcb-damage0-dev libxcb-dpms0-dev libxcb-xfixes0-dev libxcb-shape0-dev libxcb-render-util0-dev libxcb-render0-dev libxcb-randr0-dev libxcb-composite0-dev libxcb-image0-dev libxcb-present-dev libxcb-glx0-dev libpixman-1-dev libdbus-1-dev libconfig-dev libgl-dev libegl-dev libpcre2-dev libevdev-dev uthash-dev libev-dev libx11-xcb-dev meson ninja-build git
+        $INSTALL_CMD xfce4 xfce4-goodies lightdm lightdm-gtk-greeter fonts-noto thunar xfce4-panel-profiles xfce4-panel bat neofetch rofi onboard libxext-dev libxcb1-dev libxcb-damage0-dev libxcb-dpms0-dev libxcb-xfixes0-dev libxcb-shape0-dev libxcb-render-util0-dev libxcb-render0-dev libxcb-randr0-dev libxcb-composite0-dev libxcb-image0-dev libxcb-present-dev libxcb-glx0-dev libpixman-1-dev libdbus-1-dev libconfig-dev libgl-dev libegl-dev libpcre2-dev libevdev-dev uthash-dev libev-dev libx11-xcb-dev meson ninja-build git
         sudo systemctl enable lightdm
 
         git clone https://github.com/Raymo111/i3lock-color.git
