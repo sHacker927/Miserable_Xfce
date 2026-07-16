@@ -57,7 +57,7 @@ setup_directories() {
     
     for f in home/.* home/*; do
         if [ -e "$f" ] && [ "$f" != "home/." ] && [ "$f" != "home/.." ]; then
-            mv "$f" ~/
+            mv -n "$f" ~/
         fi
     done
     
