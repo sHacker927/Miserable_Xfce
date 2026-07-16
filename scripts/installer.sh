@@ -157,8 +157,8 @@ main() {
     
     # Update system
     echo -e "${BLUE}Updating system...${NC}"
-    apt update
-    apt upgrade
+    apt update -y
+    apt upgrade -y
     echo -e"${BLUE}System updated!"
      
     
