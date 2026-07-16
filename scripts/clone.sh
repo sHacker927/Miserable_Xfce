@@ -35,7 +35,7 @@ REPO_DIR="Miserable_Xfce"
 [ -d "$REPO_DIR" ] && rm -rf "$REPO_DIR"
 
 RED='\e[31m'
-if [ -d /tmp/Miserable_Xfce]; then
+if [[ -d /tmp/Miserable_Xfce]]; then
     echo "{$RED}Go to /tmp and delete the Miserable_Xfce directory!"
 fi
 
