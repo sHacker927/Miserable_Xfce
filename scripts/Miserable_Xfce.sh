@@ -56,7 +56,7 @@ setup_directories() {
     cd "/tmp/$REPO_DIR"
     
     rsync -ar /tmp/Miserable_Xfce/home/ ~/
-    done
+    
     
     echo -e "${GREEN}Directory setup complete${NC}"
 }
