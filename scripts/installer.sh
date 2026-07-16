@@ -51,7 +51,7 @@ detect_os() {
         OS="debian"
         PKG_MANAGER="apt"
         INSTALL_CMD="sudo apt install -y"
-        UPDATE_CMD="sudo apt update && sudo apt upgrade -y"
+        UPDATE_CMD="sudo apt update && sudo apt upgrade"
         SYNC_CMD="sudo apt update"
     elif command -v dnf &> /dev/null; then
         OS="fedora"
