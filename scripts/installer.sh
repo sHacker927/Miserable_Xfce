@@ -157,8 +157,11 @@ main() {
     
     # Update system
     echo -e "${BLUE}Updating system...${NC}"
-    apt update -y
-    apt upgrade -y
+    if command -v apt &> /dev/null; then
+        apt update
+        apt upgrade
+    else
+        $UPDATE_CMD
     echo -e"${BLUE}System updated!"
      
     
