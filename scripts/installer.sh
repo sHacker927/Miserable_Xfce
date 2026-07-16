@@ -157,7 +157,10 @@ main() {
     
     # Update system
     echo -e "${BLUE}Updating system...${NC}"
-    $UPDATE_CMD
+    sudo apt update
+    sudo apt upgrade
+    echo -e"${BLUE}System updated!"
+     
     
     # Show menu
     show_menu
